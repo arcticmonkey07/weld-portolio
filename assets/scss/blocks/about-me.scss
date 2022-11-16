@@ -1,0 +1,117 @@
+.about-me {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 50px;
+  padding-left: 200px;
+  padding-right: 80px;
+  padding-bottom: 50px;
+  transition: .2s;
+  background-image: linear-gradient(to left bottom, #142134, #003040, #003e3f, #1d4a34, #465329);
+  box-sizing: border-box;
+
+  @media (max-width: 1000px) {
+    padding-top: 30px;
+    padding-left: 150px;
+    overflow-x: auto;
+    overflow-y: auto;
+  }
+
+  @media (max-width: 800px) {
+    padding-right: 30px;
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 780px) {
+    padding-left: 120px;
+  }
+
+  @media (max-width: 420px) {
+    padding-left: 50px;
+  }
+
+  @media (max-width: 325px) {
+    padding-left: 40px;
+  }
+}
+
+.about-me__container {
+  @media (max-width: 800px) {
+    width: auto;
+  }
+}
+
+.about-me__text {
+  font-family: "Morning Breeze";
+  font-size: 26px;
+  line-height: 30px;
+  color: #ffffff;
+
+  @media (max-width: 800px) {
+    font-size: 22px;
+    line-height: 27px;
+  }
+}
+
+.about-me__text.caption {
+  margin-top: 20px;
+  margin-left: -20px;
+  margin-bottom: 20px;
+  color: #d1cca2;
+}
+
+.about-me__text .about-me__link {
+  margin-left: -20px;
+  color: #d1cca2;
+  text-transform: initial;
+  transition: all .2s ease-in;
+}
+
+.about-me__text .about-me__link:hover {
+  color: #74b159;
+  text-decoration: none;
+}
+
+.about-me__link-work {
+  position: relative;
+  z-index: 99;
+  color: #d1cca2;
+  text-transform: initial;
+  transition: all .2s ease-in;
+}
+
+.about-me__link-work:hover {
+  color: #74b159;
+  text-decoration: none;
+}
+
+.about-me__list {
+  margin: 0;
+  padding: 0;
+  font-family: "Morning Breeze";
+  font-size: 26px;
+  line-height: 30px;
+  list-style: none;
+
+  @media (max-width: 800px) {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+.about-me__item {
+  position: relative;
+  margin-bottom: 5px;
+  padding-left: 20px;
+  color: #fff;
+}
+
+.about-me__item:before {
+  content: '';
+  position: absolute;
+  top: 55%;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  transform: translateY(-50%);
+}

@@ -1,0 +1,193 @@
+// GLOBAL STYLES
+@import "global/custom-variables";
+
+@import "global/functions";
+@import "global/bootstrap-variables";
+@import "global/mixins";
+@import "global/reboot";
+@import "global/type";
+@import "global/grid";
+@import "global/forms";
+@import "global/buttons";
+@import "global/utilities";
+@import "global/fonts";
+
+// PLUGINS STYLE
+@import "plugins/slick-theme.scss";
+@import "plugins/slick.scss";
+
+// BLOCKS STYLE
+@import "normalize";
+@import "fonts";
+@import "variables";
+@import "blocks/index";
+@import "blocks/menu";
+@import "blocks/weld";
+@import "blocks/about-me";
+@import "blocks/argon";
+@import "blocks/slider";
+
+body {
+  font-size: 15px;
+  line-height: 24px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
+  background-color: #000000;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+// =====================================
+
+.section__petr {
+  background-image: url(../img/petr.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+	background-size: cover;
+
+  @media (max-width: 800px) {
+		background-image: url(../img/m_petr.jpg);
+		background-size: contain;
+  }
+}
+
+.section__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	font-family: "Segoe Script", Arial;
+	font-size: 57px;
+  color: #fff;
+  text-shadow: 1px 0 21px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 7px #000;
+	text-decoration: none;
+
+	@media (max-width: 800px) {
+		font-family: "Segoe Script", Arial;
+		margin-top: -84px;
+		font-size: 30px;
+		line-height: 35px;
+  }
+}
+
+.section__argon {
+  background-image: url(../img/argon.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+	background-size: cover;
+
+	@media (max-width: 800px) {
+		background-image: url(../img/m_argon.jpg);
+		background-size: contain;
+  }
+}
+
+.section__link {
+	display: flex;
+  justify-content: center;
+  align-items: center;
+	font-family: "Segoe Print", Arial;
+	font-size: 50px;
+	line-height: 55px;
+  color: #fff;
+  text-shadow: 3px 0 69px #000, 0 3px 3px #000, -3px 0 3px #000, 0 -3px 16px #000;
+	text-decoration: none;
+	transition: .2s all;
+
+	@media (max-width: 800px) {
+		font-size: 30px;
+		line-height: 35px;
+  }
+}
+
+.section__link:hover {
+	color: #000;
+	text-shadow: none;
+}
+
+.argon__link {
+	font-size: 80px;
+
+	@media (max-width: 800px) {
+		font-size: 50px;
+		line-height: 55px;
+  }
+}
+
+.section__weld {
+	background-image: url(../img/weld.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+	background-size: cover;
+
+	@media (max-width: 800px) {
+		background-image: url(../img/m_weld.jpg);
+		background-size: contain;
+  }
+}
+
+.weld__link {
+	font-size: 80px;
+	line-height: 85px;
+
+	@media (max-width: 800px) {
+		font-size: 30px;
+		line-height: 35px;
+  }
+}
+
+.section__about-me {
+	background-image: url(../img/about.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+	background-size: contain;
+
+	@media (max-width: 800px) {
+		background-image: url(../img/m_about.jpg);
+		background-size: contain;
+  }
+}
+
+.about-me__link {
+	font-size: 80px;
+
+	@media (max-width: 800px) {
+		font-size: 50px;
+  }
+}
+
+.section__work {
+  background-image: url(../img/work.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+	background-size: cover;
+
+	@media (max-width: 800px) {
+		background-image: url(../img/m_work.jpg);
+		background-size: contain;
+  }
+}
+
+.work__link {
+  font-size: 80px;
+
+	@media (max-width: 800px) {
+		font-size: 50px;
+  }
+}

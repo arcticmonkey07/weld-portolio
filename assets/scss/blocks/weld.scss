@@ -1,0 +1,72 @@
+.weld-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+	background-size: cover;
+
+  @media (max-width: 800px) {
+		background-size: cover;
+  }
+}
+
+.weld__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: none;
+  min-width: auto;
+  min-height: auto;
+  height: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.weld-section__01 {
+  background-image: url(../img/01/01.jpg);
+
+	@media (max-width: 800px) {
+		background-image: url(../img/01/01m.jpg);
+  }
+}
+
+.weld-section__02 {
+  background-image: url(../img/02/01.jpg);
+
+	@media (max-width: 800px) {
+		background-image: url(../img/02/01m.jpg);
+  }
+}
+
+.weld-section__03 {
+  background-image: url(../img/03/01.jpg);
+
+	@media (max-width: 800px) {
+		background-image: url(../img/03/01m.jpg);
+  }
+}
+
+.weld-section__04 {
+  background-image: url(../img/04/01.jpg);
+
+	@media (max-width: 800px) {
+		background-image: url(../img/04/01m.jpg);
+  }
+}
+
+.weld-section__05 {
+  background-image: url(../img/05/01.jpg);
+
+	@media (max-width: 800px) {
+		background-image: url(../img/05/01m.jpg);
+  }
+}
+
+.weld-section__06 {
+  background-image: url(../img/06/01.jpg);
+
+	@media (max-width: 800px) {
+		background-image: url(../img/06/01m.jpg);
+  }
+}
