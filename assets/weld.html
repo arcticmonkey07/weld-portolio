@@ -8,12 +8,13 @@
     $(document).ready(function () {
       $('#pagepiling').pagepiling({
         menu: '#menu',
-        anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
-        sectionsColor: ['#221e1e', '#221e1e', '#221e1e', '#221e1e', '#221e1e', '#221e1e'],
+        anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9', 'page10', 'page11'],
+        // sectionsColor: ['#221e1e', '#221e1e', '#221e1e', '#221e1e', '#221e1e', '#221e1e'],
         navigation: {
           'position': 'right',
-          'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Page 4', 'Page 5', 'Page 6']
+          'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Page 4', 'Page 5', 'Page 6', 'Page 8', 'Page 8', 'Page 9', 'Page 10', 'Page 11']
         },
+        scrollingSpeed: 200,
         afterRender: function () {
           $('#pp-nav').addClass('custom');
         },
@@ -46,6 +47,11 @@
     <li data-menuanchor="page4"><a href="#page4">04</a></li>
     <li data-menuanchor="page5"><a href="#page5">05</a></li>
     <li data-menuanchor="page6"><a href="#page6">06</a></li>
+    <li data-menuanchor="page7"><a href="#page7">07</a></li>
+    <li data-menuanchor="page8"><a href="#page8">08</a></li>
+    <li data-menuanchor="page9"><a href="#page9">09</a></li>
+    <li data-menuanchor="page10"><a href="#page10">10</a></li>
+    <li data-menuanchor="page11"><a href="#page11">11</a></li>
   </ul>
   
   <div id="pagepiling">
@@ -66,6 +72,21 @@
     </div>
     <div class="section weld-section weld-section__06" id="section6">
       <a href="weld_06.html" class="section__link">Арка</a>
+    </div>
+    <div class="section weld-section weld-section__07" id="section7">
+      <a href="weld_07.html" class="section__link">Порог</a>
+    </div>
+    <div class="section weld-section weld-section__08" id="section8">
+      <a href="weld_08.html" class="section__link">Порог</a>
+    </div>
+    <div class="section weld-section weld-section__09" id="section9">
+      <a href="weld_09.html" class="section__link">Сошки</a>
+    </div>
+    <div class="section weld-section weld-section__10" id="section10">
+      <a href="weld_10.html" class="section__link">Задняя часть</a>
+    </div>
+    <div class="section weld-section weld-section__11" id="section11">
+      <a href="weld_11.html" class="section__link">Порог</a>
     </div>
   </div>
   

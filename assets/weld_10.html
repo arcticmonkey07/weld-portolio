@@ -1,0 +1,106 @@
+@@include('template/head.html', {
+  "pagetitle": "Задняя часть",
+  "pagepiling": true
+  })
+  
+  <script type="text/javascript">
+  
+    $(document).ready(function () {
+      $('#pagepiling').pagepiling({
+        menu: '#menu',
+        navigation: {
+          'position': 'right',
+        },
+        scrollingSpeed: 300,
+        afterRender: function () {
+          $('#pp-nav').addClass('custom');
+        },
+        afterLoad: function (anchorLink, index) {
+          if (index > 1) {
+            $('#pp-nav').removeClass('custom');
+          } else {
+            $('#pp-nav').addClass('custom');
+          }
+        }
+      });
+  
+      $('#showExamples').click(function (e) {
+        e.stopPropagation();
+        e.preventDefault();
+        $('#examplesList').toggle();
+      });
+  
+      $('html').click(function () {
+        $('#examplesList').hide();
+      });
+    });
+  </script>
+  
+  <ul id="menu">
+    <li class="active"><a href="weld.html">Назад</a></li>
+  </ul>
+  
+  
+  <div id="pagepiling">
+    <div class="section" id="section1">
+      <picture>
+        <img src="img/10/01.jpg" class="weld__img" alt="зад-часть" />
+      </picture>
+    </div>
+    <div class="section" id="section2">
+      <picture>
+        <img src="img/10/02.jpg" class="weld__img" alt="зад-часть" />
+      </picture>
+    </div>
+    <div class="section" id="section3">
+      <picture>
+        <img src="img/10/03.jpg" class="weld__img" alt="зад-часть" />
+      </picture>
+    </div>
+    <div class="section" id="section4">
+      <picture>
+        <img src="img/10/04.jpg" class="weld__img" alt="зад-часть" />
+      </picture>
+    </div>
+    <div class="section" id="section5">
+      <picture>
+        <img src="img/10/05.jpg" class="weld__img" alt="зад-часть" />
+      </picture>
+    </div>
+    <div class="section" id="section6">
+      <picture>
+        <img src="img/10/06.jpg" class="weld__img" alt="зад-часть" />
+      </picture>
+    </div>
+    <div class="section" id="section7">
+      <picture>
+        <img src="img/10/07.jpg" class="weld__img" alt="зад-часть" />
+      </picture>
+    </div>
+    <div class="section" id="section8">
+      <picture>
+        <img src="img/10/08.jpg" class="weld__img" alt="зад-часть" />
+      </picture>
+    </div>
+    <div class="section" id="section9">
+      <picture>
+        <img src="img/10/09.jpg" class="weld__img" alt="зад-часть" />
+      </picture>
+    </div>
+    <div class="section" id="section10">
+      <picture>
+        <img src="img/10/10.jpg" class="weld__img" alt="зад-часть" />
+      </picture>
+    </div>
+    <div class="section" id="section11">
+      <picture>
+        <img src="img/10/11.jpg" class="weld__img" alt="зад-часть" />
+      </picture>
+    </div>
+  </div>
+  
+  
+  <script type="text/javascript" src="js/jquery.pagepiling.js"></script>
+  </body>
+  
+  </html>
